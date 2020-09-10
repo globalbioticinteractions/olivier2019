@@ -2,7 +2,10 @@ install:
 - curl -L "https://raw.githubusercontent.com/globalbioticinteractions/globinizer/master/check-dataset.sh"
   > check-dataset.sh
 - chmod +x check-dataset.sh
-script: "./check-dataset.sh ${TRAVIS_REPO_SLUG}"
+script: 
+  - "echo check-dataset.sh"
+  - "which bash"
+  - "./check-dataset.sh ${TRAVIS_REPO_SLUG}"
 env:
   global:
   - secure: YOg+J/oZAh73eIdxBucTdS0BC9WDsq1MKE5yBejubXei7nKXV3/EJ1jrNXD9sxSyALksQteBRFOInBP3pO8mkCwfvdWS5KCBfgUN+Fd/ZAJ59Vm9/GZSWumzT/qx5F9RbZu+oD1F4tcHVOJIhXcTVfl+8EFRP5IeC/Gna7jCaml7gZAcpORlTEe6xG3wmweIi1fBG4WG2v4kJgre7NTCGp04yl8C9+KaDm2H01rvf6i11YSIPPpYZN+eVQEIY/Ygc4Bh8CGAoiaCtlWmJPbUFNkmtBSXeblqagPX8m32GaVM7v8IfdpxUdHXje+hwZhTpD6JS6qkFRtpukdgX8IWqZA4O+iSfq79HszP+KSvReQD6nY83vTLaOwh/BDdNmJIcEi9n+7LF2H2N2C1wspepmEQxg8jMjnsiOa0gk/22PBHcMmX5ebQ7Uapz6Y9FykZ7/E3kNQuxfGV+DfGOJVg3ZJ8Q1JrFs4T4S7LkrukkFSjc5KSjMkVcSSgrpzkpvTza+RCUu2A1hiMWYWWbVDkpqUmn9cPn0QsDJhlan+zJ2Rn+O4np5ILW+W/3T9JevGAn18JAJxG5RPqOBYhjXMWu4su5m4u5fdVsN/hJ9EdSoolGbA2uo56Y/mLNDvf8intxg2B9Ax8awOHeiEr554uyQBXJZ4ffxSVwoPkjABwjhE=
