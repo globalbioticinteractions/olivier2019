@@ -1,0 +1,60 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "url" : "file:///home/jorrit/proj/globi/data/olivier2019/Olivier_et_al._Pairwise_list.csv",
+  "dcterms:bibliographicCitation" : "Olivier, Pierre et al. (2019), Exploring the temporal variability of a food web using long‐term biomonitoring data, Wiley, Article-journal, https://doi.org/10.1111/ecog.04461",
+  "delimiter" : ",",
+  "headerRowCount" : 1,
+  "interactionTypeName" : "preysOn",
+  "interactionTypeId" : "http://purl.obolibrary.org/obo/RO_0002439",
+  "null" : [ "", "NA" ],
+  "tableSchema" : {
+    "columns" : [ {
+      "name" : "sourceTaxonName",
+      "titles" : "PREDATOR",
+      "datatype" : "string"
+    }, {
+      "name" : "targetTaxonName",
+      "titles" : "PREY",
+      "datatype" : "string"
+    }, {
+      "name" : "basisOfRecord",
+      "titles" : "source",
+      "datatype" : "string"
+    }, {
+      "name" : "sourceLifeStageName",
+      "titles" : "pred_lifestage",
+      "datatype" : "string"
+    }, {
+      "name" : "targetLifeStageName",
+      "titles" : "prey_lifestage",
+      "datatype" : "string"
+    }, {
+      "name" : "localityName",
+      "titles" : "area",
+      "datatype" : "string"
+    }, {
+      "name" : "referenceCitation",
+      "titles" : "ref",
+      "datatype" : "string"
+    }, {
+      "name" : "notes",
+      "titles" : "notes",
+      "datatype" : "string"
+    }, {
+      "name" : "Quality",
+      "titles" : "Quality",
+      "datatype" : "string"
+    }, {
+      "name" : "eventDate",
+      "titles" : "yref",
+      "datatype" : "string"
+    }, {
+      "name" : "nref",
+      "titles" : "nref",
+      "datatype" : "string"
+    } ]
+  }
+}
